@@ -10,11 +10,14 @@ import {SEMESTER_LIST} from '../constants.js'
 
 class NewStudent extends Component {
     render() {
-        <div>
-            <Button variant="outlined" color="primary" style={{margin: 10}}>
-                Add New Student
-            </Button>
-        </div>
+
+        return(
+            <div>
+                <Button variant="outlined" color="primary" style={{margin: 10}}>
+                    Add New Student
+                </Button>
+            </div>
+        )
     };
 };
 
