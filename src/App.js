@@ -21,6 +21,7 @@ function App() {
        <Switch>
         <Route exact path='/' component={Semester} />
         <Route path='/schedule' component={SchedList} />
+        {/* new student route */}
         <Route path='/newStudent' component={NewStudent} />
        </Switch>
       </BrowserRouter>
