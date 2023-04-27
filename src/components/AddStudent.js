@@ -42,6 +42,7 @@ class AddStudent extends Component {
         console.log("add.student");
         const token = Cookies.get('XSRF-TOKEN');
 
+        // taking info thru url instead of body
         fetch(`${SERVER_URL}/student?name=${this.state.name}&email=${this.state. email}`, 
           {  
             method: 'POST', 
