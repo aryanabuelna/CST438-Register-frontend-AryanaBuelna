@@ -40,19 +40,18 @@ class AddStudent extends Component {
        //this.props.addStudent(this.state.student);
 
         console.log("add.student");
-
         const token = Cookies.get('XSRF-TOKEN');
-        
-        fetch(`${SERVER_URL}/student`, 
+
+        fetch(`${SERVER_URL}/student?name=${this.state.name}&email=${this.state. email}`, 
           {  
             method: 'POST', 
             headers: { 'X-XSRF-TOKEN': token },
 
-            body: JSON.stringify(
-                {   name: this.state.name,
-                    email: this.state.email
-                }
-            )
+            // body: JSON.stringify(
+            //     {   name: this.state.name,
+            //         email: this.state.email
+            //     }
+            // )
           } )
         .then((response) => {
           console.log("FETCH");
