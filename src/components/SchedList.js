@@ -12,6 +12,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import AddCourse from './AddCourse';
 import NewStudent from './NewStudent.js';
+import AddStudent from './AddStudent.js';
+
 
 // NOTE:  for OAuth security, http request must have
 //   credentials: 'include' 
