@@ -63,7 +63,14 @@ class Semester extends Component {
                 variant="outlined" color="primary" style={{margin: 10}}>
                 Get Schedule
               </Button>
-              <NewStudent/>
+
+
+              <Button component={Link} 
+                      to={{pathname:'/newStudent'}} 
+                variant="outlined" color="primary" style={{margin: 10}}>
+                ADD NEW STUDENT
+              </Button>
+              
               
 
           </div>
